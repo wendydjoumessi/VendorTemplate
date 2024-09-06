@@ -1,0 +1,115 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.accordion-content {
+    max-height: 0;
+    transition: 100px 0.3s ease-out;
+}
+
+.footer-about{
+    line-height: 27px !important;
+}
+
+footer{
+    padding-top: 80px !important;
+}
+
+.content{
+    padding-bottom: 20px;
+}
+.home-h2{
+    padding-top: 60px !important;
+    font-size: 33px;
+    line-height: 40px;
+}
+.category-name{
+    font-size: 14px;
+    line-height: 21px;
+}
+.product-title{
+    font-size: 19.2px;
+    line-height: 24px;
+}
+.gray-box{
+    height: 300px;
+    width: 300px;
+}
+.check-box{
+    height: 18px;
+    width: 18px;
+}
+.product-description{
+    padding: 81px 0;
+}
+.description{
+    font-size: 16px;
+    line-height: 27px;
+}
+.productT{
+    font-size: 38px;
+    line-height: 48px;
+}
+
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;     
+    width: 56px;           
+    height: 56px;           
+    border-radius: 50%;         
+}
+
+
+.contact-p{
+    font-size: 24px;
+    line-height: 30px;
+}
+.active{
+    width: 44px;
+    height: 44px;
+    background-color: #009DD1;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-right: 20px;
+}
+.activeli{
+    color: #009DD1;
+}
+.text{
+    font-size: 13px;
+    line-height: 18px;
+}
+.text1{
+    font-size: 16px;
+    line-height: 24px;
+}
+
+@media (min-width:768px) {
+    .about-section{
+        padding-right: 198px !important;
+    }
+    .sidebar-width{
+        width: 352px;
+    }
+    .grid-width{
+        width: 100px;
+    }
+    .contact-section{
+        margin: 40px 0px;
+    }
+    .text{
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .Popular-section{
+        padding-top: 166px;
+    }
+    .contact-info{
+        margin-right: 100px;
+    }
+}
+
