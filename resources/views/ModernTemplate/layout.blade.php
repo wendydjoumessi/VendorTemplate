@@ -56,7 +56,7 @@
                         </div>
                     
                     <!-- Navigation Links -->
-                    <ul id="menu" class="hidden md:flex pt-6 md:pt-0 md:bg-white md:text-black w-1/2 md:w-auto h-auto absolute md:relative top-0 bg-black text-white left-0 mx-auto md:mx-0 px-5 md:px-0
+                    <ul id="menu" class="hidden md:flex pt-6 md:pt-0 md:bg-white md:text-black w-1/2 md:w-auto  h-screen lg:h-20  fixed md:relative top-0 bg-black text-white left-0 mx-auto md:mx-0 px-5 md:px-0
                     pb-12 md:pb-0">
                         <div class="md:hidden mb-4 md:mb-4">
                             <img src="ModernTemplate/images/Logo.png" class="w-60 h-auto" />
@@ -64,20 +64,20 @@
                         <li class="md:pr-10 flex items-center hover:text-custom-blue pt-2 md:pt-0">
                             <a href="{{ url('/home') }}" class="flex items-center {{ Request::is('home') ? 'activeli' : '' }}">Home</a>
                         </li>
-                        <li class="md:pr-10 flex items-center pt-2 md:pt-0">
-                            <div class="flex items-center">
-                                <a href="#" class="hover:text-custom-blue flex items-center {{ Request::is('categories') ? 'activeli' : '' }}" >Categories</a>
-                                <img src="ModernTemplate/images/Vector.svg" class="filter grayscale invert pl-3" onclick="toggleDropdown('categories-dropdown')"/>
+                        <li class="md:pr-10 flex flex-col lg:flex-row lg:items-center pt-2 md:pt-0">
+                            <div class="flex lg:items-center">
+                                <a href="#" class="hover:text-custom-blue lg:items-center {{ Request::is('categories') ? 'activeli' : '' }}" >Categories</a>
+                                <img src="ModernTemplate/images/Vector.svg" class="filter grayscale invert pl-3" id="dropdown-icon" onclick="toggleDropdown('categories-dropdown', 'dropdown-icon')"/>
                             </div>
 
                              <!-- categories-dropdown -->
 
-                            <ul id="categories-dropdown" class="hidden absolute top-10 md:bg-white shadow-md rounded mt-2 p-4 min-w-[10rem] max-w-full overflow-auto bg-black md:text-black text-white">
-                                <li class="py-2 px-4 hover:text-custom-blue text-base whitespace-nowrap"><a href="{{ url('/categories') }}">Electronics</a></li>
-                                <li class="py-2 px-4 hover:text-custom-blue  text-base whitespace-nowrap"><a href="#">Home Audio</a></li>
-                                <li class="py-2 px-4 hover:text-custom-blue  text-base whitespace-nowrap"><a href="#">Camera and Photo</a></li>
-                                <li class="py-2 px-4 hover:text-custom-blue  text-base whitespace-nowrap"><a href="#">Generator and Portable Power</a></li>
-                                <li class="py-2 px-4 hover:text-custom-blue  text-base whitespace-nowrap"><a href="#">Televisions and Videos</a></li>
+                            <ul id="categories-dropdown" class="hidden lg:absolute top-10 md:bg-white shadow-md rounded mt-2 lg:px-4 py-4 min-w-[10rem] max-w-full lg:overflow-auto bg-black md:text-black text-white">
+                                <li class="py-2 px-4 hover:text-custom-blue text-base "><a href="{{ url('/categories') }}">Electronics</a></li>
+                                <li class="py-2 px-4 hover:text-custom-blue  text-base "><a href="#">Home Audio</a></li>
+                                <li class="py-2 px-4 hover:text-custom-blue  text-base "><a href="#">Camera and Photo</a></li>
+                                <li class="py-2 px-4 hover:text-custom-blue  text-base "><a href="#">Generator and Portable Power</a></li>
+                                <li class="py-2 px-4 hover:text-custom-blue  text-base "><a href="#">Televisions and Videos</a></li>
                             </ul>
                         </li>
                         <li class="md:pr-10 flex items-center  hover:text-custom-blue pt-2 md:pt-0">
@@ -209,14 +209,41 @@
         }
 
 
-            function toggleDropdown(id) {
+        function toggleDropdown(id, buttonId) {
             var dropdown = document.getElementById(id);
+            var button = document.getElementById(buttonId);
+
+            // Toggle the dropdown
             if (dropdown.classList.contains('hidden')) {
                 dropdown.classList.remove('hidden');
+
+                // Add an event listener to the document to close the dropdown if clicked outside
+                setTimeout(function() {
+                    document.addEventListener('click', function(event) {
+                        var isClickInsideDropdown = dropdown.contains(event.target);
+                        var isClickOnButton = button.contains(event.target);
+
+                        // If the click is outside both the dropdown and the button, hide the dropdown
+                        if (!isClickInsideDropdown && !isClickOnButton) {
+                            dropdown.classList.add('hidden');
+                        }
+                    }, { once: true }); // Ensure the event listener is removed after it's triggered once
+                }, 0);
+
             } else {
                 dropdown.classList.add('hidden');
             }
         }
+
+
+            document.addEventListener('click', function(event) {
+                const isClickInside = dropdown.contains(event.target) || toggleButton.contains(event.target);
+                
+                // If the click is outside the dropdown and button, close the dropdown
+                if (!isClickInside) {
+                    dropdown.classList.add('hidden'); // Hide dropdown
+                }
+            });
      
             const menuToggle = document.getElementById('menu-toggle');
             const menu = document.getElementById('menu');
