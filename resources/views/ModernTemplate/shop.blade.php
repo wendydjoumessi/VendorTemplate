@@ -85,19 +85,33 @@
         <!-- end of  sidebar -->
 
         <!-- main content -->
-        <div class="hero  md:w-3/4 h-auto w-full mt-10 md:mt-10">
-           <div class="relative hidden md:block">
-           <img src="ModernTemplate/images/F4.png" class="w-full ml-6 mb-10" />
-               <div class="flex absolute bottom-8 right-40 mb-4 mr-4">
-                    <a href="{{ url('/shop') }}" class="justify-center items-center flex">
-                      <img src="ModernTemplate/images/Vector (14).png" class="w-full mr-5" />
-                     </a>
-                    <a href="{{ url('/shop-grid') }}" class="justify-center items-center flex active">
-                       <img src="ModernTemplate/images/Vector (15).png"/>
-                   </a>
-                </div>
+    <div class="hero  md:w-3/4 h-auto w-full mt-10 md:mt-0">
+      <div class="relative hidden md:block">
+        <img src="ModernTemplate/images/bg.jpg" class="ml-6 mb-10 h-auto w-full" />
+           <div class="flex absolute bottom-0 right-0 justify-between pb-8 w-full whitespace-nowrap h-auto">
+            <!-- Left Section: Home / Shop -->
+            <div class="pl-10 text-white flex flex-col justify-center">
+                <p class="title font-bold pb-2">Shop</p>
+                <p class="text-sm">Home / Shop</p>
             </div>
-         <div class="grid lg:grid-cols-1 xl:grid-cols-2  w-full mx-auto">
+
+            <!-- Right Section: Showing Products and Links -->
+            <div class="flex justify-between items-center space-x-4">
+                <!-- Icons -->
+                <a href="{{ url('/shop') }}" class="flex justify-center items-center">
+                    <img src="ModernTemplate/images/Vector (14).png" class="w-5 h-auto" />
+                </a>
+                <a href="{{ url('/shop-grid') }}" class="flex justify-center items-center active">
+                    <img src="ModernTemplate/images/Vector (15).png" class="w-5 h-auto" />
+                </a>
+                <!-- Products Info -->
+                <p class="text-white text-sm">
+                    Showing <strong>12</strong> of 20 products
+                </p>
+            </div>
+          </div>
+        </div>
+         <div class="grid lg:grid-cols-2 xl:grid-cols-3 md:grid-cols-1 w-full mx-auto">
             @foreach (range(0,8) as $index )
               <div class="md:ml-6 mb-10 md:mb-5">
                 <div class="border border-black-500 rounded-lg bg-white p-4 w-full h-auto">
@@ -110,15 +124,15 @@
                     </div>
                 </div>
                 <div class="pt-4 flex">
-                    <button class="flex bg-custom-gray text-custom-dark p-3 rounded-md whitespace-nowrap md:pr-0 w-full justify-center lg:justify-start md:mr-3">
+                    <button class="flex bg-custom-gray text-custom-dark p-3 rounded-md whitespace-nowrap md:pr-0 w-[116px] justify-center lg:justify-start mr-1">
                         <img src="ModernTemplate/images/Vector (7).png" class="mr-2 max-w-full" />
-                        <p class="lg:text1 text whitespace-nowrap mx-3">
+                        <p class="text whitespace-nowrap mx-3">
                             Call to Buy
                         </p>
                     </button>
-                    <button class=" bg-custom-green text-white flex py-3 rounded-md whitespace-nowrap px-1 md:px-0 w-full justify-center lg:justify-start">
+                    <button class=" bg-custom-green text-white flex py-3 rounded-md whitespace-nowrap px-1 md:px-0 w-auto flex-grow justify-center lg:justify-start">
                         <img src="ModernTemplate/images/Vector (8).png" class="ml-2 max-w-full">
-                        <strong class="lg:text1 text ml-2">Buy Via Whatsapp</strong>
+                        <strong class="text ml-2">Buy Via Whatsapp</strong>
                     </button>
                 </div>
             </div>

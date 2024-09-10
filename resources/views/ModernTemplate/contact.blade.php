@@ -2,9 +2,15 @@
 
 @section('content')
     <div class="p-4 container mx-auto">
-       <img src="ModernTemplate/images/Frame3.png" class="max-w-full mt-12 md:mt-0" />
-       <div class="flex min-h-screen justify-center items-center">
-          <div class="grid md:grid-cols-2 grid-cols-1 md:mx-12">
+      <div class="relative">
+         <img src="ModernTemplate/images/bg.jpg" class="w-full mt-12 lg:mt-0 h-[157px]" />
+         <div class="absolute items-center left-0 bottom-0 flex flex-col justify-center text-white contact">
+            <p class="title font-bold pb-2">Contact</p>
+            <p class="text-base">Home / contact</p>
+         </div>
+      </div>
+       <div class="flex justify-center items-center contact-main">
+          <div class="grid lg:grid-cols-2 grid-cols-1 mt-12">
             <div class="contact-info">
                 <p class="font-bold contact-p pb-9 pt-5 md:pt-0">Please fill out this form and we will get in touch with you shortly</p>
                 <div>

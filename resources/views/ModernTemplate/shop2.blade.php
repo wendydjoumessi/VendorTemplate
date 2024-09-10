@@ -88,15 +88,24 @@
         <!-- main content -->
         <div class="md:w-3/4 w-full h-full mt-10 md:mt-0">
             <div class="relative hidden md:block">
-                <img src="ModernTemplate/images/F4.png" class="max-w-full mb-6 lg:mb-12 ml-6" />
-                <div class="flex absolute bottom-8 right-40 mb-4 mr-4">
-                    <a href="{{ url('/shop') }}" class="active">
-                      <img src="ModernTemplate/images/Vector (14).png" class="max-w-full"/>
+                <img src="ModernTemplate/images/bg.jpg" class="max-w-full mb-6 lg:mb-12 ml-6" />
+                <div class="flex absolute bottom-0 right-0 justify-between pb-8 w-full whitespace-nowrap h-auto">
+                   <div class="pl-10 text-white flex flex-col justify-center">
+                        <p class="title font-bold pb-2">Shop</p>
+                        <p class="text-sm">Home / Shop</p>
+                    </div>
+                  <div class="flex justify-between items-center space-x-4">
+                    <a href="{{ url('/shop') }}" class="active flex justify-center items-center">
+                      <img src="ModernTemplate/images/Vector (14).png" class="w-5 h-auto"/>
                      </a>
                     <a href="{{ url('/shop-grid') }}" class="justify-center items-center flex">
-                       <img src="ModernTemplate/images/Vector (15).png"/>
+                       <img src="ModernTemplate/images/Vector (15).png" class="w-5 h-auto"/>
                    </a>
+                   <p class="text-white text-sm">
+                       Showing <strong>12</strong> of 20 products
+                   </p>
                 </div>
+             </div>
             </div>
             @foreach (range(0,4) as $index )
              <div class="flex flex-col md:flex-row md:ml-6 mb-6">

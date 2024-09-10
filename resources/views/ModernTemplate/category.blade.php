@@ -18,15 +18,15 @@
                     </div>
                 </div>
                   <div class="pt-4 flex">
-                    <button class="flex bg-custom-gray text-custom-dark p-3 rounded-md whitespace-nowrap pr-1 mr-1 w-full h-auto justify-center">
+                    <button class="flex bg-custom-gray text-custom-dark p-3 rounded-md whitespace-nowrap pr-1 mr-1 w-40 h-auto justify-center">
                         <img src="ModernTemplate/images/Vector (7).png" class="mr-1 md:mr-2 max-w-full" />
-                        <p class="md:text1 text whitespace-nowrap mx-3 md:mx-4">
+                        <p class="lg:text-sm text-base whitespace-nowrap mx-3 md:mx-4">
                             Call to Buy
                         </p>
                     </button>
-                    <button class="bg-custom-green text-white flex py-3 rounded-md whitespace-nowrap px-1 w-full justify-center h-auto">
+                    <button class="bg-custom-green text-white flex py-3 rounded-md whitespace-nowrap px-1 justify-center h-auto flex-grow w-auto">
                         <img src="ModernTemplate/images/Vector (8).png" class=" max-w-full md:mr-2 mr-1">
-                        <strong class="md:text1 text mx-1">Buy Via Whatsapp</strong>
+                        <strong class="lg:text-sm text-base mx-1">Buy Via Whatsapp</strong>
                     </button>
                 </div>
             </div>

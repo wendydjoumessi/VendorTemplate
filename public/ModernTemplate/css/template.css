@@ -87,6 +87,14 @@ footer{
     font-size: 16px;
     line-height: 24px;
 }
+.title{
+    font-size: 40px;
+    line-height: 48px;
+}
+.contact{
+    padding-bottom: 40px;
+    padding-left: 140px;
+}
 
 @media (min-width:768px) {
     .about-section{
@@ -100,6 +108,10 @@ footer{
     }
     .contact-section{
         margin: 40px 0px;
+    }
+    .contact-main{
+        padding: 0 130px;
+        padding-bottom: 136px;
     }
     .text{
         font-size: 12px;

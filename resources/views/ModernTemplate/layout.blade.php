@@ -42,21 +42,21 @@
 
        
          <!-- Navigation Bar -->
-                <nav class="container mx-auto pl-3 md:py-3 md:px-0 flex md:justify-between items-center relative mb-5 md:mb-0">
+                <nav class="container mx-auto pl-3 lg:py-3 lg:px-0 flex lg:justify-between items-center relative mb-5 lg:mb-0">
                     <!-- Logo -->
                         <div class="">
-                            <img src="ModernTemplate/images/Logo.png" class="absolute top-4 md:relative md:top-0 md:w-60 h-auto w-40  pr-4 md:pr-4" />
+                            <img src="ModernTemplate/images/Logo.png" class="absolute top-4 lg:relative lg:top-0 lg:w-60 h-auto w-40  pr-4 lg:pr-4" />
                         </div>
 
                         <!-- Hamburger Menu Icon for Small Screens -->
-                        <div class="md:hidden absolute right-12 top-3">
+                        <div class="lg:hidden absolute right-12 top-3">
                             <button id="menu-toggle" class="text-black focus:outline-none">
                                 <img src="ModernTemplate/images/square.png" class="w-10 h-10 max-w-full cursor-pointer"/>
                             </button>
                         </div>
                     
                     <!-- Navigation Links -->
-                    <ul id="menu" class="hidden md:flex pt-6 md:pt-0 md:bg-white md:text-black w-1/2 md:w-auto  h-screen lg:h-20  fixed md:relative top-0 bg-black text-white left-0 mx-auto md:mx-0 px-5 md:px-0
+                    <ul id="menu" class="hidden lg:flex pt-6 lg:pt-0 md:bg-white md:text-black w-1/2 lg:w-auto  h-screen lg:h-20  fixed lg:relative top-0 bg-black text-white left-0 mx-auto lg:mx-0 px-5 lg:px-0
                     pb-12 md:pb-0">
                         <div class="md:hidden mb-4 md:mb-4">
                             <img src="ModernTemplate/images/Logo.png" class="w-60 h-auto" />
@@ -107,9 +107,9 @@
        
 
        <!-- start of footer -->
-      <footer class="bg-gray-200 md:text-left md:px-0">
+      <footer class="bg-gray-200 lg:text-left lg:px-0">
         <div class="container mx-auto px-4 ">
-            <div class="grid md:grid-cols-1 lg:grid-cols-2 gap-4 content mx-auto md:mx-0">
+            <div class="grid md:grid-cols-1 lg:grid-cols-2 gap-4 content mx-auto lg:mx-0">
                 <div class="about-section md:text-left">
                     <h6 class="font-bold text-xl pb-6">About Us</h6>
                     <p class="text-sm footer-about text-left">
@@ -161,17 +161,17 @@
                     </div>
 
                 <div class="lg:ml-7 xl:ml-9">
-                   <p class="font-bold text-xl md:pb-6 pb-3 pt-6 md:pt-0 text-left">Follow Us</p>
+                   <p class="font-bold text-xl lg:pb-6 pb-3 pt-6 lg:pt-0 text-left">Follow Us</p>
                     <div class="flex pb-3 text-sm">
-                        <img src="ModernTemplate/images/Vector (3).png" class="mr-3 max-w-full"/>
+                        <img src="ModernTemplate/images/vector1 (3).png" class="mr-3 max-w-full"/>
                         <p>Facebook</p>
                     </div>
                     <div class="flex pb-4 text-sm">
-                        <img src="ModernTemplate/images/Vector (4).png" class=" mr-3 max-w-full"/>
+                        <img src="ModernTemplate/images/vector2 (3).png" class=" mr-3 max-w-full"/>
                         <p>Twiiter</p>
                     </div>
                     <div class="flex pb-4 text-sm">
-                        <img src="ModernTemplate/images/Vector (5).png" class="mr-3 max-w-full"/>
+                        <img src="ModernTemplate/images/vector3 (3).png" class="mr-3 max-w-full"/>
                         <p>LinkedIn</p>
                     </div>
                     <div class="flex text-sm">
@@ -180,8 +180,8 @@
                     </div>
                 </div>
                 <div>
-                    <p class="font-bold text-xl pb-6 text-left pt-6 md:pt-0">Download App</p>
-                    <img src="ModernTemplate/images/Google_Play (1).png" class="md:pt-8 pb-4 max-w-full"/>
+                    <p class="font-bold text-xl pb-6 text-left pt-6 lg:pt-0">Download App</p>
+                    <img src="ModernTemplate/images/Google_Play (1).png" class="pb-4 max-w-full"/>
                     <img src="ModernTemplate/images/Google_Play (3).png" class="max-w-full"/>
                 </div>
               </div>

@@ -14,21 +14,23 @@
                     <div>
                         <img src="ModernTemplate/images/Rectangle {{$index}}.png" class="w-full" />
                     </div>
-                    <div>
-                        <p class="category-name">Category</p>
-                        <p class="font-bold product-title">Product Title <br/>XAF 20,000 </p>
+                    <div class="pt-6">
+                        <p class="category-name pb-2">Category</p>
+                        <p class="font-bold product-title pb-2">Product Title</p> 
+                        <span class="font-bold product-title">XAF 20,000</span>
+
                     </div>
                 </div>
                   <div class="pt-4 flex">
-                    <button class="flex bg-custom-gray text-custom-dark p-3 rounded-md whitespace-nowrap pr-1 mr-1 w-full justify-center lg:justify-start">
+                    <button class="flex bg-custom-gray text-custom-dark p-3 rounded-md whitespace-nowrap pr-1 mr-1 w-40 justify-center lg:justify-start">
                         <img src="ModernTemplate/images/Vector (7).png" class="mr-2 max-w-full" />
-                        <p class="lg:text1 text whitespace-nowrap mx-3 md:mx-4">
+                        <p class="lg:text-base text-sm whitespace-nowrap mx-3 md:mx-4">
                             Call to Buy
                         </p>
                     </button>
-                    <button class=" bg-custom-green text-white flex py-3 rounded-md whitespace-nowrap px-1 w-full justify-center lg:justify-start">
+                    <button class=" bg-custom-green text-white flex py-3 rounded-md whitespace-nowrap px-1 flex-grow w-auto justify-center lg:justify-start">
                         <img src="ModernTemplate/images/Vector (8).png" class="mr-2 max-w-full ml-2">
-                        <strong class="lg:text1 text">Buy Via Whatsapp</strong>
+                        <strong class="lg:text-base text-sm">Buy Via Whatsapp</strong>
                     </button>
                 </div>
             </div>
@@ -52,13 +54,13 @@
                         </div>
                     </div>
                     <div class="pt-4 flex">
-                        <button class="flex bg-custom-gray text-custom-dark p-3 rounded-md whitespace-nowrap pr-1 md:pr-0 w-full justify-center md:justify-start">
+                        <button class="flex bg-custom-gray text-custom-dark p-3 rounded-md whitespace-nowrap pr-1 md:pr-0 lg:w-[140px] w-40 justify-center lg:justify-start mr-1">
                             <img src="ModernTemplate/images/Vector (7).png" class="mr-2 md:mr-0 max-w-full" />
                             <p class="text whitespace-nowrap mx-4 md:pr-1">
                                 Call to Buy
                             </p>
                         </button>
-                        <button class=" bg-custom-green text-white flex py-3 rounded-md whitespace-nowrap px-1 md:px-0 md:ml-1 w-full justify-center md:justify-start">
+                        <button class=" bg-custom-green text-white flex py-3 rounded-md whitespace-nowrap px-1 md:px-0 w-auto flex-grow justify-center lg:justify-start">
                             <img src="ModernTemplate/images/Vector (8).png" class="mr-1 md:mr-1 md:ml-1 max-w-full">
                             <strong class="text">Buy Via Whatsapp</strong>
                         </button>
